@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyExcelAddIn.Properties {
+namespace ExcelAddin.QuickStart.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Office.Interop.Excel;
 
-namespace MyExcelAddIn.Controls
+namespace ExcelAddin.QuickStart.Controls
 {
     public partial class CustomTaskPanelCtrl : UserControl
     {

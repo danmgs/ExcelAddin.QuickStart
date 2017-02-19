@@ -25,8 +25,8 @@
     <ProjectGuid>{9CD37EE2-A3C9-4C5D-BC45-10C671F716AB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoStandardLibraries>false</NoStandardLibraries>
-    <RootNamespace>MyExcelAddIn</RootNamespace>
-    <AssemblyName>MyExcelAddIn</AssemblyName>
+    <RootNamespace>ExcelAddin.QuickStart</RootNamespace>
+    <AssemblyName>ExcelAddin.QuickStart</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <DefineConstants>VSTO40</DefineConstants>
     <IsWebBootstrapper>False</IsWebBootstrapper>
@@ -39,10 +39,10 @@
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>0</UpdateInterval>
     <UpdateIntervalUnits>days</UpdateIntervalUnits>
-    <ProductName>MyExcelAddIn</ProductName>
+    <ProductName>ExcelAddin.QuickStart</ProductName>
     <PublisherName>Daniel CORP</PublisherName>
     <SupportUrl />
-    <FriendlyName>MyExcelAddIn</FriendlyName>
+    <FriendlyName>ExcelAddin.QuickStart</FriendlyName>
     <OfficeApplicationDescription>My Great ExcelAddIn Description</OfficeApplicationDescription>
     <LoadBehavior>3</LoadBehavior>
   </PropertyGroup>
@@ -199,7 +199,6 @@
     <EmbeddedResource Include="Ribbon\CustomRibbon.resx">
       <DependentUpon>CustomRibbon.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="MyExcelAddIn_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -237,13 +236,14 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>MyExcelAddIn_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>ExcelAddin.QuickStart_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>664D7D3DA16F70CE3B676865E8709E3A5CD64F26</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>MyExcelAddIn_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <!-- Include the build rules for a C# project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
@@ -254,7 +254,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{BAA0C2D2-18E2-41B9-852F-F413020CAA33}">
         <ProjectProperties HostName="Excel" HostPackage="{29A7B9D7-A7F1-4328-8EF0-6B2D1A56B2C1}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="Excel" Language="cs" TemplatesPath="" DebugInfoExeName="#Software\Microsoft\Office\16.0\Excel\InstallRoot\Path#excel.exe" DebugInfoCommandLine="/x" AddItemTemplatesGuid="{51063C3A-E220-4D12-8922-BDA915ACD783}" />
-        <Host Name="Excel" GeneratedCodeNamespace="MyExcelAddIn" PublishedHash="69C324AB27932AA2FBF2B7EA72250886FF164DE6" IconIndex="0">
+        <Host Name="Excel" GeneratedCodeNamespace="ExcelAddin.QuickStart" PublishedHash="69C324AB27932AA2FBF2B7EA72250886FF164DE6" IconIndex="0">
           <HostItem Name="ThisAddIn" Code="ThisAddIn.cs" CanonicalName="AddIn" PublishedHash="8BC17CAE795FA8D9612A400FDC0AC8E9986AD517" CanActivate="false" IconIndex="1" Blueprint="ThisAddIn.Designer.xml" GeneratedCode="ThisAddIn.Designer.cs" />
         </Host>
       </FlavorProperties>

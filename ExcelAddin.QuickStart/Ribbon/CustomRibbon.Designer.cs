@@ -1,4 +1,4 @@
-﻿namespace MyExcelAddIn
+﻿namespace ExcelAddin.QuickStart
 {
     partial class CustomRibbon : Microsoft.Office.Tools.Ribbon.RibbonBase
     {

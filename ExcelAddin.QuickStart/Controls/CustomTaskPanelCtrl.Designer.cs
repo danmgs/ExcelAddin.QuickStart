@@ -1,4 +1,4 @@
-﻿namespace MyExcelAddIn.Controls
+﻿namespace ExcelAddin.QuickStart.Controls
 {
     partial class CustomTaskPanelCtrl
     {
