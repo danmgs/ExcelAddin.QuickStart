@@ -1,6 +1,7 @@
 ﻿using ExcelAddin.QuickStart.Controls;
 using Microsoft.Office.Tools;
 using System;
+using System.Deployment.Application;
 using System.Windows.Forms;
 
 namespace ExcelAddin.QuickStart
@@ -22,13 +23,25 @@ namespace ExcelAddin.QuickStart
 
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
-            _customTaskPanelCtrl = new CustomTaskPanelCtrl();
+            //https://stackoverflow.com/questions/24282560/get-office-addin-publish-version
+            string versionNumber = string.Empty;
+            if (ApplicationDeployment.IsNetworkDeployed)
+            {
+                ApplicationDeployment applicationDeployment = ApplicationDeployment.CurrentDeployment;
+                Version version = applicationDeployment.CurrentVersion;
+                versionNumber = String.Format("{0}.{1}.{2}.{3}", version.Major, version.Minor, version.Build, version.Revision);
+            }
+
+            _customTaskPanelCtrl = new CustomTaskPanelCtrl(versionNumber);
 
             try
             {
                 _customTaskPane = this.CustomTaskPanes.Add(_customTaskPanelCtrl, "#### My Task Panel ####");
                 _customTaskPane.Width = 400;
                 _customTaskPane.Visible = true;
+
+
+                //labelVersionTab1.Text = string.Format("Addin v{0}", versionNumber);
             }
             catch (Exception ex)
             {

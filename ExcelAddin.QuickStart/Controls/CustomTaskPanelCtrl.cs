@@ -13,9 +13,10 @@ namespace ExcelAddin.QuickStart.Controls
 {
     public partial class CustomTaskPanelCtrl : UserControl
     {
-        public CustomTaskPanelCtrl()
+        public CustomTaskPanelCtrl(string versionNumber)
         {
             InitializeComponent();
+            labelVersionTab1.Text = versionNumber;
         }
 
         private void tabPage1_Click(object sender, EventArgs e)

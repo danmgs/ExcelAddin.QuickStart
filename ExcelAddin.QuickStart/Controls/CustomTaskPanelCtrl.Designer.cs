@@ -35,9 +35,10 @@
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.tabMainControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.labelTitleTab1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.labelTitleTab2 = new System.Windows.Forms.Label();
-            this.labelTitleTab1 = new System.Windows.Forms.Label();
+            this.labelVersionTab1 = new System.Windows.Forms.Label();
             this.tabMainControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -87,7 +88,7 @@
             this.textBoxPassword.TabIndex = 6;
             this.textBoxPassword.UseSystemPasswordChar = true;
             // 
-            // tabControl1
+            // tabMainControl
             // 
             this.tabMainControl.Controls.Add(this.tabPage1);
             this.tabMainControl.Controls.Add(this.tabPage2);
@@ -99,6 +100,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.labelVersionTab1);
             this.tabPage1.Controls.Add(this.labelTitleTab1);
             this.tabPage1.Controls.Add(this.textBoxLogin);
             this.tabPage1.Controls.Add(this.textBoxPassword);
@@ -114,6 +116,16 @@
             this.tabPage1.Text = "Tab 1";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // labelTitleTab1
+            // 
+            this.labelTitleTab1.AutoSize = true;
+            this.labelTitleTab1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitleTab1.Location = new System.Drawing.Point(112, 35);
+            this.labelTitleTab1.Name = "labelTitleTab1";
+            this.labelTitleTab1.Size = new System.Drawing.Size(71, 13);
+            this.labelTitleTab1.TabIndex = 7;
+            this.labelTitleTab1.Text = "Connection";
             // 
             // tabPage2
             // 
@@ -136,15 +148,14 @@
             this.labelTitleTab2.TabIndex = 0;
             this.labelTitleTab2.Text = "Parameters";
             // 
-            // labelTitleTab1
+            // labelVersionTab1
             // 
-            this.labelTitleTab1.AutoSize = true;
-            this.labelTitleTab1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitleTab1.Location = new System.Drawing.Point(112, 35);
-            this.labelTitleTab1.Name = "labelTitleTab1";
-            this.labelTitleTab1.Size = new System.Drawing.Size(71, 13);
-            this.labelTitleTab1.TabIndex = 7;
-            this.labelTitleTab1.Text = "Connection";
+            this.labelVersionTab1.AutoSize = true;
+            this.labelVersionTab1.Location = new System.Drawing.Point(237, 359);
+            this.labelVersionTab1.Name = "labelVersionTab1";
+            this.labelVersionTab1.Size = new System.Drawing.Size(10, 13);
+            this.labelVersionTab1.TabIndex = 8;
+            this.labelVersionTab1.Text = "-";
             // 
             // CustomTaskPanelCtrl
             // 
@@ -173,5 +184,6 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label labelTitleTab2;
         private System.Windows.Forms.Label labelTitleTab1;
+        private System.Windows.Forms.Label labelVersionTab1;
     }
 }

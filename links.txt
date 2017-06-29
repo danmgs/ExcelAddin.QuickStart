@@ -1,0 +1,2 @@
+http://www.clear-lines.com/blog/post/create-excel-2007-vsto-add-in-custom-task-pane.aspx
+https://msdn.microsoft.com/fr-fr/library/bb772100.aspx
