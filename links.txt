@@ -1,2 +1,4 @@
 http://www.clear-lines.com/blog/post/create-excel-2007-vsto-add-in-custom-task-pane.aspx
 https://msdn.microsoft.com/fr-fr/library/bb772100.aspx
+https://stackoverflow.com/questions/3840270/fastest-way-to-interface-between-live-unsaved-excel-data-and-c-sharp-objects/3847094#3847094
+https://stackoverflow.com/questions/7092309/access-excel-worksheet-in-c-sharp-class-file-using-vsto

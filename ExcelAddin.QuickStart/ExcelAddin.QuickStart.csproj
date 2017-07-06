@@ -49,7 +49,7 @@
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 et x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
@@ -200,6 +200,7 @@
     <EmbeddedResource Include="Ribbon\CustomRibbon.resx">
       <DependentUpon>CustomRibbon.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ExcelAddin.QuickStart_TemporaryKey.pfx" />
     <None Include="launch.bat">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -243,7 +244,7 @@
     <ManifestKeyFile>ExcelAddin.QuickStart_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>664D7D3DA16F70CE3B676865E8709E3A5CD64F26</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>4AE8B7A402480C6A775064EEDC4627E5A92F55CB</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>
